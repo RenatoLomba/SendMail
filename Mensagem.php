@@ -4,6 +4,7 @@ class Mensagem {
     private $destino;
     private $assunto;
     private $mensagem;
+    public $status = ['codigo' => null, 'descricao' => null];
 
     public function __set($attr, $valor) {
         $this->$attr = $valor;
